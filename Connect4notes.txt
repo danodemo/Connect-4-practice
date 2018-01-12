@@ -1,0 +1,71 @@
+Connect 4
+
+
+  A B C D E F G
+6 _ _ _ _ _ _ _			
+5 _ _ _ _ _ _ _
+4 _ _ _ _ _ _ _
+3 _ _ _ _ _ _ _
+2 _ _ _ _ _ _ _
+1 _ _ _ _ _ _ _
+
+counterA = 0
+counterB = 0
+counterC = 0
+counterD = 0
+counterE = 0
+counterF = 0
+counterG = 0
+
+row1 = [0,0,0,0,0,0,0]
+row2 = [0,0,0,0,0,0,0]
+row3 = [0,0,0,0,0,0,0]
+row4 = [0,0,0,0,0,0,0]
+row5 = [0,0,0,0,0,0,0]
+row6 = [0,0,0,0,0,0,0]
+
+puts "A B C D E F G"
+puts "--------------"
+p row6
+p row5
+p row4
+p row3
+p row2
+p row1
+puts "--------------"
+
+
+Player 1 chooses a column
+Game checks to see how many times that column has been chosen and adds 1 to appropriate counter
+Game uses the counter to determine which array to update
+Game updates appropriate row array to mark move
+EXAMPLE:
+Player 1 chooses column A
+counterA + 1
+
+
+Player 2 chooses acolumn
+Repeat until one player has 4 moves in arow, column, or diagnoal that are adjacent
+
+Board as a hash?
+
+{board:
+  row: [1, 2, 3, 4, 5, 6],
+  column: [A, B, C, D, E, F, G],
+  }
+
+Store moves in an array
+Store winning combinations in another array
+
+
+
+Board object
+Player object
+Cell/Move object?
+
+Things to remember:
+- Each column has a limited number of moves
+- Clear progression patterns will emerge -> re: where the pieces go
+
+
+def
